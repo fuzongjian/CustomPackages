@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Extension)
-
+/**过滤掉特殊的字符*/
+- (NSString *)deleteSomeCharacters:(NSString *)deleteStr originalStr:(NSString *)original;
 @end

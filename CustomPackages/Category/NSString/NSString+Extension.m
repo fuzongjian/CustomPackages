@@ -9,5 +9,9 @@
 #import "NSString+Extension.h"
 
 @implementation NSString (Extension)
+- (NSString *)deleteSomeCharacters:(NSString *)deleteStr originalStr:(NSString *)original{
+    NSCharacterSet * set = [NSCharacterSet characterSetWithCharactersInString:deleteStr];
+    return [original stringByTrimmingCharactersInSet:set];
+}
 
 @end
